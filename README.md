@@ -18,3 +18,30 @@ BrainFuck uses an array of bytes for memory. It also has a pointer that is initi
 | `]`    | If the memory cell under the pointer is not `0`, jump to the matching bracket |
 
 All other characters are ignored.
+
+### Example programs
+
+```brainfuck
+This program prints the string "ABBA" to STDOUT
+
++++++ + Add 6 to cell 0
+
+[             While not 0
+  >             Move pointer to cell 1
+  +++++ +++++ + Add 11 to cell 1
+  <             Move pointer to cell 0
+  -             Subtract one
+]             End While
+
+After the loop cell 0 will be 0
+and cell 1 will be 66 (6*11) (uppercase B in ASCII)
+The pointer is pointing at cell 0
+
+>  Move pointer to cell 1
+-  Subtract 1 (65 uppercase A)
+.  Print A
++  Add 1
+.. Print two B's
+-  Subtract 1
+.  Print A
+```
