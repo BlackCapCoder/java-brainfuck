@@ -19,7 +19,7 @@ BrainFuck uses an array of bytes for memory. It also has a pointer that is initi
 
 All other characters are ignored.
 
-BrainFuck is turing-compleate, which means that it is capable of simulating life, the universe and everything. In fact, BrainFuck is turing complete with only two memory cells.
+BrainFuck is turing-complete, which means that it is capable of simulating life, the universe and everything. In fact, BrainFuck is turing complete with only two memory cells.
 
 ### Example programs
 
