@@ -45,3 +45,13 @@ The pointer is pointing at cell 0
 -  Subtract 1
 .  Print A
 ```
+
+```brainfuck
+Print all numbers between 0 and 9 separated by a newline
++++
+[ > ++++ 
+  [ >+>+>++++<<<-]
+  <- ]
+>>-->--<
+[>.>.+<<-]
+```
