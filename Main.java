@@ -8,7 +8,7 @@ class State {
   public void Pred  () { mem[ptr]--; }
 
   public void Right () { ptr = ptr+1 % mem.length; }
-  public void Left  () { ptr = ptr==0 ? mem.length : ptr-1;  }
+  public void Left  () { ptr = (ptr==0 ? mem.length : ptr) - 1;  }
 
   public void Output () { System.out.print((char) mem[ptr]); }
   public void Input  () {
